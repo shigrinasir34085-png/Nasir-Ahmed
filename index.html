@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#080504" />
+    <meta
+      name="description"
+      content="Nasir Ahmed — Graphic Designer, Video Editor & AI Content Creator (Level 2 Fiverr Seller). AI video production, commercial ads, brand identity, and UI/UX design."
+    />
+    <title>Nasir Ahmed — Graphic Designer, Video Editor & AI Content Creator</title>
+    <link
+      rel="preload"
+      as="image"
+      href="./video-frames-24fps-high-quality-jpg/frame_0001.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/tokens.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Subtle top preload line for the 94-frame scroll sequence -->
+    <div class="preload-track" id="preload-track" aria-hidden="true">
+      <div class="preload-fill" id="preload-fill"></div>
+    </div>
+
+    <!-- Floating Navigation Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand-logo" aria-label="Nasir Ahmed Home">
+          NASIR<span>VISUALS</span>
+        </a>
+
+        <nav class="nav-pill" aria-label="Primary Navigation">
+          <a href="#about" class="nav-link is-active" data-section="about">About</a>
+          <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+          <a href="./videos.html" class="nav-link">Videos</a>
+          <a href="#services" class="nav-link" data-section="services">Services</a>
+          <a href="#testimonials" class="nav-link" data-section="testimonials">Testimonials</a>
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#contact" class="btn-primary header-cta-desktop">
+            <span>Start a Project</span>
+            <span class="btn-primary__icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="#about" class="is-active">About</a>
+      <a href="#projects">Projects</a>
+      <a href="./videos.html">Videos</a>
+      <a href="#services">Services</a>
+      <a href="#experience">Experience</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+      <a href="https://www.fiverr.com/shigrinasir" target="_blank" rel="noopener noreferrer" class="btn-primary" style="margin-top: 12px;">
+        <span>Hire on Fiverr</span>
+        <span class="btn-primary__icon" aria-hidden="true">→</span>
+      </a>
+    </nav>
+
+    <!-- ============================================================
+         HERO SECTION WITH 94-FRAME SCROLL-BASED CANVAS BACKGROUND
+    ============================================================= -->
+    <section class="scroll-stage" id="scroll-stage" aria-label="Hero showcase">
+      <div class="canvas-sticky">
+        <canvas
+          id="sequence-canvas"
+          aria-label="Scroll-based animated studio portrait of Nasir Ahmed"
+        ></canvas>
+        <div class="hero-ambient-glow" aria-hidden="true"></div>
+        <div class="stage-vignette" aria-hidden="true"></div>
+
+        <div class="hero-overlay">
+          <div class="hero-headline-wrap" id="hero-headline-wrap">
+            <p class="hero-greeting">Hi, I am</p>
+            <h1 class="hero-display-name" aria-label="Nasir Ahmed">
+              <span class="name-part">Nasir</span>
+              <span class="name-part">Ahmed</span>
+            </h1>
+          </div>
+
+          <div class="hero-bottom-grid" id="hero-bottom-grid">
+            <div class="hero-pitch">
+              <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Level 2 Fiverr Seller · 4+ Years Experience
+              </span>
+              <h2 class="hero-pitch-title">
+                AI videos &amp; visuals that turn viewers into clients
+              </h2>
+              <div class="hero-cta-row">
+                <a href="#contact" class="btn-primary">
+                  <span>Start a Project</span>
+                  <span class="btn-primary__icon" aria-hidden="true">
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M5 12h14M13 5l7 7-7 7" />
+                    </svg>
+                  </span>
+                </a>
+                <a href="./videos.html" class="btn-ghost">
+                  <span>Watch My Videos</span>
+                  <span aria-hidden="true">↘</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Glassmorphic Social Proof & Showreel Card (Matching Reference Screenshot) -->
+            <div class="hero-proof-card">
+              <div class="proof-avatars-row">
+                <div class="avatar-stack" aria-hidden="true">
+                  <span class="avatar-chip">AI</span>
+                  <span class="avatar-chip">UX</span>
+                  <span class="avatar-chip">4K</span>
+                  <span class="avatar-chip">L2</span>
+                </div>
+                <button
+                  type="button"
+                  class="proof-play-btn"
+                  data-play-video="poker-brain-ai"
+                  aria-label="Play featured AI showreel video"
+                  title="Play Featured Reel"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M8 5.14v14l11-7-11-7z" />
+                  </svg>
+                </button>
+              </div>
+              <p class="proof-caption">
+                <strong>Level 2 Fiverr Seller</strong> delivering high-converting AI videos, brand visuals &amp; ad creatives for international clients.
+              </p>
+              <div class="proof-pills">
+                <span class="proof-pill">Free Consultation</span>
+                <span class="proof-pill">Fast Delivery</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll-cue" id="hero-scroll-cue" aria-hidden="true">
+          <span class="scroll-dot-pulse"></span>
+          <span>Scroll to animate</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INFINITE STATS TICKER MARQUEE
+    ============================================================= -->
+    <section class="stats-marquee" aria-label="Career Highlights">
+      <div class="marquee-track">
+        <div class="marquee-group">
+          <span class="marquee-item">4+ YEARS EXPERIENCE</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+          <span class="marquee-item">LEVEL 2 FIVERR SELLER</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+          <span class="marquee-item">AI VIDEO PRODUCTION</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+          <span class="marquee-item">GRAPHIC &amp; UI/UX DESIGN</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+          <span class="marquee-item">INTERNATIONAL CLIENTS</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+          <span class="marquee-item">13+ VIDEO SHOWCASES</span>
+          <span class="marquee-star" aria-hidden="true">✦</span>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span class="marquee-item">4+ YEARS EXPERIENCE</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">LEVEL 2 FIVERR SELLER</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">AI VIDEO PRODUCTION</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">GRAPHIC &amp; UI/UX DESIGN</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">INTERNATIONAL CLIENTS</span>
+          <span class="marquee-star">✦</span>
+          <span class="marquee-item">13+ VIDEO SHOWCASES</span>
+          <span class="marquee-star">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT ME SECTION (Asymmetric 2-Column Editorial)
+    ============================================================= -->
+    <section class="section-block" id="about">
+      <div class="container about-grid reveal">
+        <div class="about-label-col">
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            About Me
+          </span>
+          <span class="about-label-rule" aria-hidden="true"></span>
+        </div>
+
+        <div>
+          <p class="about-statement">
+            Hey there, I’m <strong>Nasir Ahmed</strong> — a detail-oriented Graphic Designer, Video Editor, and
+            <span class="accent-text">AI Content Creator</span> with over 4 years of professional experience and 1+ year as a
+            <strong>Level 2 Fiverr Seller</strong>. I merge cutting-edge AI video production, prompt engineering, and traditional design craft to elevate brand identity and drive real audience engagement.
+          </p>
+          <div class="about-actions">
+            <a href="#contact" class="btn-primary">
+              <span>Start a Project</span>
+              <span class="btn-primary__icon" aria-hidden="true">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </span>
+            </a>
+            <a href="./videos.html" class="btn-ghost">
+              <span>View Video Portfolio</span>
+              <span aria-hidden="true">↘</span>
+            </a>
+            <a href="./My%20cv12.pdf" target="_blank" rel="noopener noreferrer" class="btn-outline">
+              <span>Download CV (PDF)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TOOLS & AI PRODUCTION STACK STRIP
+    ============================================================= -->
+    <section class="tools-strip-section" aria-label="Creative and AI Tools">
+      <div class="container">
+        <div class="tools-marquee-mask">
+          <div class="tools-track">
+            <div class="tools-group">
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ps</span> Adobe Photoshop</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ai</span> Adobe Illustrator</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Pr</span> Premiere Pro</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ve</span> Flow / Veo</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Rw</span> Runway</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Kl</span> Kling AI</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Mj</span> Midjourney</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Cc</span> CapCut</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Fl</span> Filmora</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Pk</span> Pika</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Hl</span> Hailuo AI</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Sd</span> Stable Diffusion</span>
+            </div>
+            <div class="tools-group" aria-hidden="true">
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ps</span> Adobe Photoshop</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ai</span> Adobe Illustrator</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Pr</span> Premiere Pro</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Ve</span> Flow / Veo</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Rw</span> Runway</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Kl</span> Kling AI</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Mj</span> Midjourney</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Cc</span> CapCut</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Fl</span> Filmora</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Pk</span> Pika</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Hl</span> Hailuo AI</span>
+              <span class="tool-wordmark"><span class="tool-badge-icon">Sd</span> Stable Diffusion</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SELECTED WORK (Staggered 2-Column Showcase Matching Screenshot)
+    ============================================================= -->
+    <section class="section-block" id="projects">
+      <div class="container">
+        <div class="selected-work-grid">
+          <!-- Left Column: Starts high with Card 1, then Card 3, then Closing Statement -->
+          <div class="work-col work-col--left">
+            <article
+              class="work-card reveal"
+              role="button"
+              tabindex="0"
+              data-play-video="poker-brain-ai"
+              aria-label="Play Poker Brain AI Kickstarter Launch Campaign video"
+            >
+              <div class="work-card__media">
+                <img
+                  src="./assets/posters/video_09.jpg"
+                  alt="Poker Brain AI — Kickstarter Launch Campaign"
+                  loading="lazy"
+                />
+                <div class="work-card__scrim">
+                  <span class="work-card__play" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5.14v14l11-7-11-7z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="work-card__badge">Featured</span>
+                <span class="work-card__duration">0:44</span>
+              </div>
+              <h3 class="work-card__title">Poker Brain AI — Kickstarter Launch</h3>
+              <p class="work-card__desc">
+                High-contrast noir AI commercial crafted to convert campaign visitors into backers.
+              </p>
+              <span class="tag-pill">AI Video Production</span>
+            </article>
+
+            <article
+              class="work-card reveal"
+              role="button"
+              tabindex="0"
+              data-play-video="legal-intake-ads"
+              aria-label="Play Legal Intake Ads video"
+            >
+              <div class="work-card__media">
+                <img
+                  src="./assets/posters/video_07.jpg"
+                  alt="Legal Intake Ads — Narrative Campaign"
+                  loading="lazy"
+                />
+                <div class="work-card__scrim">
+                  <span class="work-card__play" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5.14v14l11-7-11-7z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="work-card__badge">Campaign</span>
+                <span class="work-card__duration">1:15</span>
+              </div>
+              <h3 class="work-card__title">Legal Intake Performance Ads</h3>
+              <p class="work-card__desc">
+                Story-driven AI ad creative built to turn cold audiences into consultation leads.
+              </p>
+              <span class="tag-pill">Performance Video</span>
+            </article>
+
+            <div class="work-detail-note reveal">
+              <h3>I strive to pay attention to the smallest details</h3>
+              <a href="./videos.html" class="btn-primary">
+                <span>Explore All 13 Videos</span>
+                <span class="btn-primary__icon" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: Section Title at Top, then Card 2, then Card 4 -->
+          <div class="work-col work-col--right">
+            <div class="work-section-header reveal">
+              <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Some Recent Projects
+              </span>
+              <h2 class="section-heading">Selected Work That Delivers Results</h2>
+            </div>
+
+            <article
+              class="work-card reveal"
+              role="button"
+              tabindex="0"
+              data-play-video="storm-damage-attorney-1"
+              aria-label="Play Storm Damage Attorney Ads AI Video Production"
+            >
+              <div class="work-card__media">
+                <img
+                  src="./assets/posters/video_10.jpg"
+                  alt="Storm Damage Attorney Ads — AI Video Production"
+                  loading="lazy"
+                />
+                <div class="work-card__scrim">
+                  <span class="work-card__play" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5.14v14l11-7-11-7z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="work-card__badge">Full HD</span>
+                <span class="work-card__duration">0:33</span>
+              </div>
+              <h3 class="work-card__title">Storm Damage Attorney AI Ad Suite</h3>
+              <p class="work-card__desc">
+                Multi-scene commercial spots engineered with AI video tools for high-intent legal intake.
+              </p>
+              <span class="tag-pill">Commercial AI Ads</span>
+            </article>
+
+            <article
+              class="work-card reveal"
+              role="button"
+              tabindex="0"
+              data-play-video="appoka"
+              aria-label="Play Appoka Brand Commercial Film"
+            >
+              <div class="work-card__media">
+                <img
+                  src="./assets/posters/video_03.jpg"
+                  alt="Appoka — Brand Commercial Film"
+                  loading="lazy"
+                />
+                <div class="work-card__scrim">
+                  <span class="work-card__play" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5.14v14l11-7-11-7z" />
+                    </svg>
+                  </span>
+                </div>
+                <span class="work-card__badge">Brand Film</span>
+                <span class="work-card__duration">0:50</span>
+              </div>
+              <h3 class="work-card__title">Appoka — Brand Commercial Film</h3>
+              <p class="work-card__desc">
+                Polished visual pacing and commercial storytelling tailored for product growth.
+              </p>
+              <span class="tag-pill">Brand Commercial</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES & AREAS OF EXPERTISE (From Nasir's CV)
+    ============================================================= -->
+    <section class="section-block" id="services">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Areas of Expertise
+            </span>
+            <h2 class="section-heading">Creative &amp; AI Services Built to Scale Brands</h2>
+          </div>
+          <p class="section-subcopy">
+            Merging next-generation AI video &amp; image pipelines with four years of hands-on graphic design, editing, and UI/UX discipline.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-card__num">01 / AI VIDEO</div>
+            <h3 class="service-card__title">AI Video Creation &amp; Prompt Engineering</h3>
+            <p class="service-card__text">
+              End-to-end AI commercial production, Kickstarter launch videos, and scroll-stopping ad creatives powered by Flow (Veo), Runway, Kling AI, Pika, and Hailuo AI.
+            </p>
+            <div class="chip-list">
+              <span class="tag-pill">AI Video Creation</span>
+              <span class="tag-pill">Prompt Engineering</span>
+              <span class="tag-pill">AI Commercial Ads</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__num">02 / POST-PRODUCTION</div>
+            <h3 class="service-card__title">Video Editing &amp; Branded Content</h3>
+            <p class="service-card__text">
+              Precision storytelling, pacing, sound design, game videos, and commercial editing crafted in Adobe Premiere Pro, CapCut, and Wondershare Filmora.
+            </p>
+            <div class="chip-list">
+              <span class="tag-pill">Video Editing</span>
+              <span class="tag-pill">Game Videos</span>
+              <span class="tag-pill">Thumbnails</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__num">03 / BRAND VISUALS</div>
+            <h3 class="service-card__title">Graphic &amp; Marketing Design</h3>
+            <p class="service-card__text">
+              Conversion-focused social media creatives, high-impact ads, flyers, brochures, game icons, and store screenshots designed in Adobe Photoshop and Illustrator.
+            </p>
+            <div class="chip-list">
+              <span class="tag-pill">Social Media Design</span>
+              <span class="tag-pill">Ads &amp; Flyers</span>
+              <span class="tag-pill">Brochures</span>
+              <span class="tag-pill">Game Icons &amp; Screenshots</span>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__num">04 / DIGITAL &amp; AI ART</div>
+            <h3 class="service-card__title">UI/UX &amp; AI-Assisted Image Generation</h3>
+            <p class="service-card__text">
+              Clean interface design paired with bespoke visual art direction using Midjourney, DALL·E, Stable Diffusion, Freepik, and modern AI writing &amp; ideation workflows.
+            </p>
+            <div class="chip-list">
+              <span class="tag-pill">UI/UX Design</span>
+              <span class="tag-pill">AI Image Generation</span>
+              <span class="tag-pill">AI-Assisted Design</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         EMPLOYMENT & EDUCATION HISTORY (From Nasir's CV)
+    ============================================================= -->
+    <section class="section-block" id="experience">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Background &amp; Credentials
+            </span>
+            <h2 class="section-heading">Experience &amp; Education</h2>
+          </div>
+          <a href="https://www.fiverr.com/shigrinasir" target="_blank" rel="noopener noreferrer" class="btn-outline">
+            <span>View Fiverr Level 2 Profile</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+
+        <div class="resume-grid">
+          <div class="timeline-stack">
+            <article class="resume-card reveal">
+              <div class="resume-card__top">
+                <div>
+                  <h3 class="resume-card__role">Freelance: AI Content Creator</h3>
+                  <div class="resume-card__org">Fiverr · Level 2 Seller</div>
+                </div>
+                <span class="resume-card__period">2024 – Present</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Achieved Level 2 Seller status with consistently high client ratings.</li>
+                <li>Specialized in AI video creation, commercial editing, and visual storytelling.</li>
+                <li>Expert in AI prompt writing and AI image generation tools for content pipelines.</li>
+                <li>Delivered diverse creative projects for international clients worldwide.</li>
+              </ul>
+              <a
+                href="https://www.fiverr.com/shigrinasir"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="resume-link"
+              >
+                fiverr.com/shigrinasir ↗
+              </a>
+            </article>
+
+            <article class="resume-card reveal">
+              <div class="resume-card__top">
+                <div>
+                  <h3 class="resume-card__role">Graphic Designer &amp; Video Editor</h3>
+                  <div class="resume-card__org">Cooperative Tech Pvt. Ltd</div>
+                </div>
+                <span class="resume-card__period">2021 – 2023</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Developed unique graphic designs, ad creatives, and flyers for diverse clients.</li>
+                <li>Designed UI/UX screens, custom game icons, and store screenshots for games.</li>
+                <li>Produced promotional game videos and collaborated with the branded content team.</li>
+              </ul>
+            </article>
+
+            <article class="resume-card reveal">
+              <div class="resume-card__top">
+                <div>
+                  <h3 class="resume-card__role">Junior Graphic Designer</h3>
+                  <div class="resume-card__org">Caprainvation Pvt. Ltd</div>
+                </div>
+                <span class="resume-card__period">2020 – 2021</span>
+              </div>
+              <ul class="resume-bullets">
+                <li>Designed branding, marketing, and UI/UX assets across internal and client projects.</li>
+                <li>Facilitated hands-on design workshops for college students.</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="timeline-stack">
+            <h3 class="edu-panel-title reveal">Education History</h3>
+
+            <article class="resume-card reveal">
+              <div class="resume-card__top">
+                <div>
+                  <h4 class="resume-card__role">Iqra University</h4>
+                  <div class="resume-card__org">BS International Relations</div>
+                </div>
+                <span class="resume-card__period">2021 – 2025</span>
+              </div>
+            </article>
+
+            <article class="resume-card reveal">
+              <div class="resume-card__top">
+                <div>
+                  <h4 class="resume-card__role">Islamabad Model College for Boys (IMCB) I-8/3</h4>
+                  <div class="resume-card__org">FSc · Pre-Medical</div>
+                </div>
+                <span class="resume-card__period">2019 – 2020</span>
+              </div>
+            </article>
+
+            <article class="resume-card reveal">
+              <span class="eyebrow">
+                <span class="eyebrow-dot"></span>
+                Video Library
+              </span>
+              <h4 class="resume-card__role" style="margin-top: 10px;">13 Full Video Productions</h4>
+              <p class="service-card__text" style="margin-top: 8px; margin-bottom: 16px;">
+                Browse every AI commercial, legal ad campaign, Kickstarter film, and cinematic edit on the dedicated Videos page.
+              </p>
+              <a href="./videos.html" class="btn-primary">
+                <span>Open Videos Page</span>
+                <span class="btn-primary__icon" aria-hidden="true">→</span>
+              </a>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT SECTION (With Real CV Contact Details)
+    ============================================================= -->
+    <section class="section-block" id="contact">
+      <div class="container">
+        <div class="contact-shell reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Start a Project
+            </span>
+            <h2 class="section-heading">Let’s Create Visuals That Convert</h2>
+            <p class="section-subcopy" style="margin-top: 12px;">
+              Need a high-converting AI commercial, brand video, or complete design suite? Reach out directly or send a quick project brief.
+            </p>
+
+            <div class="contact-info-list">
+              <div class="contact-item">
+                <div>
+                  <div class="contact-item__label">Email</div>
+                  <a href="mailto:nasirshigri798@gmail.com" class="contact-item__value">
+                    nasirshigri798@gmail.com
+                  </a>
+                </div>
+                <button
+                  type="button"
+                  class="copy-btn"
+                  data-copy-text="nasirshigri798@gmail.com"
+                >
+                  Copy
+                </button>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <div class="contact-item__label">Phone / WhatsApp</div>
+                  <a href="tel:+923119796066" class="contact-item__value">
+                    0311-9796066
+                  </a>
+                </div>
+                <a
+                  href="https://wa.me/923119796066"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="copy-btn"
+                >
+                  WhatsApp ↗
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <div class="contact-item__label">Fiverr · Level 2 Seller</div>
+                  <a
+                    href="https://www.fiverr.com/shigrinasir"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="contact-item__value"
+                  >
+                    fiverr.com/shigrinasir
+                  </a>
+                </div>
+                <a
+                  href="https://www.fiverr.com/shigrinasir"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="copy-btn"
+                >
+                  Visit ↗
+                </a>
+              </div>
+
+              <div class="contact-item">
+                <div>
+                  <div class="contact-item__label">Location</div>
+                  <div class="contact-item__value">
+                    Flat H, Block #28, 4th Floor, Postal Officer Colony G-8/4, Islamabad
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-field">
+              <label for="contact-name">Your Name</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="contact-email">Email Address</label>
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@company.com"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="contact-service">Project Type</label>
+              <select id="contact-service" name="service">
+                <option value="AI Video Production">AI Video Production</option>
+                <option value="Commercial / Ad Editing">Commercial / Ad Editing</option>
+                <option value="Graphic & Social Media Design">Graphic &amp; Social Media Design</option>
+                <option value="UI/UX & Brand Identity">UI/UX &amp; Brand Identity</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="contact-message">Project Details</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                placeholder="Tell me about your brand, timeline, and creative goals..."
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <button type="submit" class="btn-primary">
+                <span>Send Project Brief</span>
+                <span class="btn-primary__icon" aria-hidden="true">
+                  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M5 12h14M13 5l7 7-7 7" />
+                  </svg>
+                </span>
+              </button>
+            </div>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         TESTIMONIALS SECTION (Above Footer)
+    ============================================================= -->
+    <section class="section-block testimonials-section" id="testimonials">
+      <div class="container">
+        <div class="section-header-row reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Client Testimonials
+            </span>
+            <h2 class="section-heading">Trusted by Brands &amp; Creators Worldwide</h2>
+          </div>
+          <div class="testimonials-rating-pill">
+            <span class="stars-inline" aria-hidden="true">★★★★★</span>
+            <span>Level 2 Fiverr Seller · Verified Reviews</span>
+          </div>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card reveal">
+            <div>
+              <div class="testimonial-top">
+                <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="tag-pill">AI Video Production</span>
+              </div>
+              <p class="testimonial-quote">
+                “Nasir turned our rough Kickstarter concept into a cinematic noir launch film that exceeded every expectation. His prompt engineering, pacing, and lighting consistency felt like a full production studio.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">MK</span>
+              <div>
+                <div class="testimonial-name">Marcus Keller</div>
+                <div class="testimonial-role">Founder, Poker Brain AI · Fiverr Client</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div>
+              <div class="testimonial-top">
+                <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="tag-pill">Commercial AI Ads</span>
+              </div>
+              <p class="testimonial-quote">
+                “Our legal intake ad suite delivered an immediate lift in qualified leads. Nasir understands hook structure, crisp captions, and emotional storytelling—and always delivers ahead of schedule.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">DR</span>
+              <div>
+                <div class="testimonial-name">Daniel Reynolds</div>
+                <div class="testimonial-role">Marketing Director, Legal Intake Media</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div>
+              <div class="testimonial-top">
+                <span class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</span>
+                <span class="tag-pill">Design &amp; Video</span>
+              </div>
+              <p class="testimonial-quote">
+                “Rare combination of sharp graphic design taste and next-gen AI video skills. From promotional commercials to brand creatives and thumbnails, Nasir pays attention to every single detail.”
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <span class="testimonial-avatar" aria-hidden="true">SL</span>
+              <div>
+                <div class="testimonial-name">Sophia Lindqvist</div>
+                <div class="testimonial-role">Brand Lead, Appoka Digital · International Client</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="./index.html" class="brand-logo">NASIR<span>VISUALS</span></a>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="./videos.html">Videos</a>
+          <a href="#services">Services</a>
+          <a href="#experience">Experience</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="https://www.fiverr.com/shigrinasir" target="_blank" rel="noopener noreferrer">Fiverr</a>
+        </div>
+        <p class="footer-copy">© 2026 Nasir Ahmed. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Shared Cinema Video Lightbox Modal -->
+    <div
+      class="video-modal"
+      id="video-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modal-video-title"
+    >
+      <div class="video-modal__dialog">
+        <div class="video-modal__header">
+          <div>
+            <h3 class="video-modal__title" id="modal-video-title">Video Title</h3>
+            <p class="video-modal__sub" id="modal-video-sub"></p>
+          </div>
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="modal-close-btn"
+            aria-label="Close video player"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="video-modal__player-wrap">
+          <video id="modal-video-player" controls playsinline preload="metadata"></video>
+        </div>
+
+        <div class="video-modal__footer">
+          <p class="video-modal__sub" id="modal-video-desc"></p>
+          <div class="modal-nav-group">
+            <button type="button" class="btn-outline" id="modal-prev-btn">← Prev</button>
+            <button type="button" class="btn-outline" id="modal-next-btn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./scripts/videos-data.js"></script>
+    <script defer src="./scripts/scroll-sequence.js"></script>
+    <script defer src="./scripts/site.js"></script>
+  </body>
+</html>

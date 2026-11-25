@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#080504" />
+    <meta
+      name="description"
+      content="Video Portfolio of Nasir Ahmed — 13 AI video productions, Kickstarter launch films, commercial legal ads, and cinematic reels."
+    />
+    <title>Videos — Nasir Ahmed | AI Video Production &amp; Commercial Editing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/tokens.css" />
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Shared Floating Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="./index.html" class="brand-logo" aria-label="Nasir Ahmed Home">
+          NASIR<span>VISUALS</span>
+        </a>
+
+        <nav class="nav-pill" aria-label="Primary Navigation">
+          <a href="./index.html#about" class="nav-link">About</a>
+          <a href="./index.html#projects" class="nav-link">Projects</a>
+          <a href="./videos.html" class="nav-link is-active" aria-current="page">Videos</a>
+          <a href="./index.html#services" class="nav-link">Services</a>
+          <a href="./index.html#testimonials" class="nav-link">Testimonials</a>
+          <a href="./index.html#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <a href="./index.html#contact" class="btn-primary header-cta-desktop">
+            <span>Start a Project</span>
+            <span class="btn-primary__icon" aria-hidden="true">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 5l7 7-7 7" />
+              </svg>
+            </span>
+          </a>
+
+          <button
+            type="button"
+            class="menu-toggle"
+            id="menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobile-drawer"
+          >
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <nav class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+      <a href="./index.html#about">About</a>
+      <a href="./index.html#projects">Projects</a>
+      <a href="./videos.html" class="is-active">Videos</a>
+      <a href="./index.html#services">Services</a>
+      <a href="./index.html#experience">Experience</a>
+      <a href="./index.html#testimonials">Testimonials</a>
+      <a href="./index.html#contact">Contact</a>
+    </nav>
+
+    <!-- Videos Hero -->
+    <section class="videos-hero">
+      <div class="container videos-hero-inner">
+        <div>
+          <span class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            Complete Video Archive · Nasir Ahmed
+          </span>
+          <h1 class="videos-hero-title">AI Video &amp; Commercial Showcase</h1>
+          <p class="videos-hero-desc">
+            Explore all 13 productions — from Kickstarter AI launch films and high-converting legal ad campaigns to polished brand promos and moody cinematic reels. Click any card to stream in full cinema view.
+          </p>
+          <div class="hero-cta-row" style="margin-top: 22px;">
+            <button
+              type="button"
+              class="btn-primary"
+              data-play-video="poker-brain-ai"
+            >
+              <span>Play Featured Reel</span>
+              <span class="btn-primary__icon" aria-hidden="true">▶</span>
+            </button>
+            <a href="./index.html" class="btn-outline">
+              <span>← Back to Portfolio</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="videos-meta-card" aria-label="Video archive metrics">
+          <div class="meta-stat">
+            <strong>13</strong>
+            <span>Videos</span>
+          </div>
+          <div class="meta-divider" aria-hidden="true"></div>
+          <div class="meta-stat">
+            <strong>4K</strong>
+            <span>Max Quality</span>
+          </div>
+          <div class="meta-divider" aria-hidden="true"></div>
+          <div class="meta-stat">
+            <strong>L2</strong>
+            <span>Fiverr Seller</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filterable Video Gallery -->
+    <main class="section-block" style="padding-top: 26px;">
+      <div class="container">
+        <div class="filter-bar">
+          <div class="filter-pills" id="video-filter-pills" role="tablist" aria-label="Filter videos by category"></div>
+          <p class="filter-count" id="video-filter-count" aria-live="polite"></p>
+        </div>
+
+        <div class="videos-grid" id="videos-gallery-grid"></div>
+      </div>
+    </main>
+
+    <!-- Conversion CTA Banner -->
+    <section class="section-block" style="padding-top: 12px;">
+      <div class="container">
+        <div class="contact-shell cta-banner-shell reveal">
+          <div>
+            <span class="eyebrow">
+              <span class="eyebrow-dot"></span>
+              Ready to Produce Your Next Video?
+            </span>
+            <h2 class="section-heading">Turn Your Script or Concept Into a High-Converting Video</h2>
+            <p class="section-subcopy" style="margin-top: 10px;">
+              Available for AI commercials, ad suites, Kickstarter campaigns, and ongoing brand video editing.
+            </p>
+          </div>
+          <div class="hero-cta-row">
+            <a href="./index.html#contact" class="btn-primary">
+              <span>Start a Project</span>
+              <span class="btn-primary__icon" aria-hidden="true">→</span>
+            </a>
+            <a
+              href="https://www.fiverr.com/shigrinasir"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn-outline"
+            >
+              <span>Order on Fiverr ↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a href="./index.html" class="brand-logo">NASIR<span>VISUALS</span></a>
+        <div class="footer-links">
+          <a href="./index.html#about">About</a>
+          <a href="./index.html#projects">Projects</a>
+          <a href="./videos.html">Videos</a>
+          <a href="./index.html#services">Services</a>
+          <a href="./index.html#experience">Experience</a>
+          <a href="./index.html#testimonials">Testimonials</a>
+          <a href="https://www.fiverr.com/shigrinasir" target="_blank" rel="noopener noreferrer">Fiverr</a>
+        </div>
+        <p class="footer-copy">© 2026 Nasir Ahmed. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Shared Cinema Video Lightbox Modal -->
+    <div
+      class="video-modal"
+      id="video-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modal-video-title"
+    >
+      <div class="video-modal__dialog">
+        <div class="video-modal__header">
+          <div>
+            <h3 class="video-modal__title" id="modal-video-title">Video Title</h3>
+            <p class="video-modal__sub" id="modal-video-sub"></p>
+          </div>
+          <button
+            type="button"
+            class="modal-close-btn"
+            id="modal-close-btn"
+            aria-label="Close video player"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div class="video-modal__player-wrap">
+          <video id="modal-video-player" controls playsinline preload="metadata"></video>
+        </div>
+
+        <div class="video-modal__footer">
+          <p class="video-modal__sub" id="modal-video-desc"></p>
+          <div class="modal-nav-group">
+            <button type="button" class="btn-outline" id="modal-prev-btn">← Prev</button>
+            <button type="button" class="btn-outline" id="modal-next-btn">Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script defer src="./scripts/videos-data.js"></script>
+    <script defer src="./scripts/site.js"></script>
+  </body>
+</html>
