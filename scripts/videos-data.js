@@ -1,0 +1,212 @@
+/**
+ * Structured catalog of all 13 video productions in ./Videos
+ * Poster thumbnails are pre-extracted in ./assets/posters/ for instant grid loading.
+ */
+(() => {
+  'use strict';
+
+  const VIDEOS = [
+    {
+      id: 'poker-brain-ai',
+      title: 'Poker Brain AI — Kickstarter Launch Campaign',
+      shortTitle: 'Poker Brain AI Launch Campaign',
+      description:
+        'High-contrast noir AI commercial built to drive Kickstarter backers and product intrigue.',
+      category: 'AI Campaigns',
+      tag: 'AI Video Production',
+      file: 'Poker Brain AI — Kickstarter Launch Campaign.mp4',
+      poster: './assets/posters/video_09.jpg',
+      duration: '0:44',
+      resolution: '1440×1080',
+      badge: 'Featured',
+      featured: true,
+    },
+    {
+      id: 'storm-damage-attorney-1',
+      title: 'Storm Damage Attorney Ads — AI Production',
+      shortTitle: 'Storm Damage Attorney Ad Suite',
+      description:
+        'Multi-scene legal commercial crafted with AI video generation for high-intent lead capture.',
+      category: 'Legal Ads',
+      tag: 'Commercial AI Ads',
+      file: 'Storm Damage Attorney Ads – AI Video Production 1.mp4',
+      poster: './assets/posters/video_10.jpg',
+      duration: '0:33',
+      resolution: '1920×1080',
+      badge: 'Full HD',
+      featured: true,
+    },
+    {
+      id: 'legal-intake-ads',
+      title: 'Legal Intake Ads — Narrative Campaign',
+      shortTitle: 'Legal Intake Performance Ad',
+      description:
+        'Story-driven emotional ad creative engineered to convert viewers into legal consultations.',
+      category: 'Legal Ads',
+      tag: 'Performance Video',
+      file: 'Legal Intake Ads.mp4',
+      poster: './assets/posters/video_07.jpg',
+      duration: '1:15',
+      resolution: '960×720',
+      badge: 'Campaign',
+      featured: true,
+    },
+    {
+      id: 'appoka',
+      title: 'Appoka — Brand Commercial Film',
+      shortTitle: 'Appoka Brand Commercial',
+      description:
+        'Polished brand storytelling and motion pacing designed for digital product launch.',
+      category: 'Brand & Commercial',
+      tag: 'Brand Commercial',
+      file: 'Appoka.mp4',
+      poster: './assets/posters/video_03.jpg',
+      duration: '0:50',
+      resolution: '1440×1080',
+      badge: 'Brand Film',
+      featured: true,
+    },
+    {
+      id: 'storm-damage-victims-2',
+      title: 'Storm Damage Victims — Ad Spot #2',
+      shortTitle: 'Storm Damage Victims Spot #2',
+      description:
+        'Direct-response legal outreach commercial pairing cinematic AI visuals with crisp captions.',
+      category: 'Legal Ads',
+      tag: 'Legal AI Ads',
+      file: 'Storm damage victims  # 2.mp4',
+      poster: './assets/posters/video_11.jpg',
+      duration: '0:41',
+      resolution: '1440×1080',
+      badge: 'Ad Spot',
+      featured: false,
+    },
+    {
+      id: 'visual-showcase',
+      title: 'Visual — AI Cinematography Showcase',
+      shortTitle: 'Visual AI Showcase',
+      description:
+        'Atmospheric visual storytelling combining AI video synthesis with editorial sound & pacing.',
+      category: 'Cinematic Reels',
+      tag: 'AI Cinematography',
+      file: 'Visual.mp4',
+      poster: './assets/posters/video_12.jpg',
+      duration: '1:05',
+      resolution: '1440×1080',
+      badge: 'Showcase',
+      featured: false,
+    },
+    {
+      id: 'dark-reel',
+      title: 'Dark — Moody Cinematic AI Reel',
+      shortTitle: 'Dark Cinematic Reel',
+      description:
+        'Shadow-rich moody film study highlighting lighting consistency and dramatic AI art direction.',
+      category: 'Cinematic Reels',
+      tag: 'Cinematic AI',
+      file: 'dark .mp4',
+      poster: './assets/posters/video_05.jpg',
+      duration: '0:30',
+      resolution: '1440×1080',
+      badge: 'Cinematic',
+      featured: false,
+    },
+    {
+      id: 'cbc-commercial',
+      title: 'CBC — Brand Promo Production',
+      shortTitle: 'CBC Brand Promo',
+      description:
+        'Structured promotional video combining crisp typography, pacing, and brand-first visuals.',
+      category: 'Brand & Commercial',
+      tag: 'Brand Promo',
+      file: 'CBC(1).mp4',
+      poster: './assets/posters/video_04.jpg',
+      duration: '0:42',
+      resolution: '1440×1080',
+      badge: 'Commercial',
+      featured: false,
+    },
+    {
+      id: 'dtf-campaign',
+      title: 'DTF — Full-Minute Promo Commercial',
+      shortTitle: 'DTF Promo Commercial',
+      description:
+        'High-energy 60-second promotional video built for social campaigns and product conversion.',
+      category: 'Brand & Commercial',
+      tag: 'Social Ad',
+      file: 'DTF.mp4',
+      poster: './assets/posters/video_06.jpg',
+      duration: '1:00',
+      resolution: '1440×1080',
+      badge: '60s Spot',
+      featured: false,
+    },
+    {
+      id: 'orlando-promo',
+      title: 'Orlando — Destination & Brand Spot',
+      shortTitle: 'Orlando Brand Spot',
+      description:
+        'Vibrant location-focused commercial edit crafted for regional marketing and digital ads.',
+      category: 'Brand & Commercial',
+      tag: 'Location Ad',
+      file: 'Orlando.mp4',
+      poster: './assets/posters/video_08.jpg',
+      duration: '0:57',
+      resolution: '1440×1080',
+      badge: 'Promo',
+      featured: false,
+    },
+    {
+      id: 'winter-park',
+      title: 'Winter Park — Short Commercial Edit',
+      shortTitle: 'Winter Park Commercial',
+      description:
+        'Tight, upbeat 29-second digital spot tailored for local brand awareness and social feeds.',
+      category: 'Brand & Commercial',
+      tag: 'Short Promo',
+      file: 'Winter Park.mp4',
+      poster: './assets/posters/video_13.jpg',
+      duration: '0:29',
+      resolution: '1440×1080',
+      badge: 'Short Spot',
+      featured: false,
+    },
+    {
+      id: 'reel-4k-1',
+      title: 'Ultra-HD AI Visual Production Reel',
+      shortTitle: '4K AI Production Reel',
+      description:
+        'Crisp 4K short-form AI visual piece showcasing high-resolution prompt engineering.',
+      category: 'AI Campaigns',
+      tag: '4K AI Video',
+      file: '1.mp4',
+      poster: './assets/posters/video_01.jpg',
+      duration: '0:14',
+      resolution: '2880×2160',
+      badge: '4K UHD',
+      featured: false,
+    },
+    {
+      id: 'short-edit-345',
+      title: 'Fast-Cut Short-Form Creative Hook',
+      shortTitle: 'Short-Form Ad Hook',
+      description:
+        'Punchy 15-second scroll-stopping creative optimized for Reels, Shorts, and paid ads.',
+      category: 'Cinematic Reels',
+      tag: 'Short-Form Edit',
+      file: '345.mp4',
+      poster: './assets/posters/video_02.jpg',
+      duration: '0:15',
+      resolution: '1440×1080',
+      badge: '15s Hook',
+      featured: false,
+    },
+  ];
+
+  const enriched = VIDEOS.map((v) => ({
+    ...v,
+    src: `./Videos/${encodeURIComponent(v.file)}`,
+  }));
+
+  window.PORTFOLIO_VIDEOS = enriched;
+})();
